@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="style.css">
+	<title>Combo Trips Website</title>
+</head>
+<body class= "background-img" style="background: rgb(142,151,137);
+background: linear-gradient(0deg, rgba(142,151,137,0.7570378493194152) 65%, rgba(81,146,78,0.4489146000196954) 78%),url(image/gallery-beach.jpg);">
+<!------------------- Header and Nav Menu -------------------------------->
+	<div class="header">
+		<nav>
+			<div class="logo">
+					<img style="width:90px; position: absolute; z-index: 21;"  src="image/tourist-64.png">
+			</div>
+			<div class="nav-menu" id="navMenu">
+				<i class="fa fa-window-close" onclick="hidemenu()"></i>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery </a></li>
+						<li><a href="details.html">Resort Details</a></li>
+						<li><a href="registration.html">Trip Registration</a></li>
+					</ul>
+			</div>
+		</nav>
+	</div>
+    <div class="image-slider" style="height: 155px; margin-bottom: 35px;">
+		<div class="page-name">
+			<h1>Resorts Gallery</h1>
+        
+            
+        <div class="container half-page" style="width:50%;">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:70%; max-height: 600px; margin: auto;">
+          
+          <div id="imgtext"></div>
+        </div>
+        <div class="row">
+          <a href="https://www.tripadvisor.com/AttractionProductReview-g147311-d11867455-Blue_Hole_Secret_Falls_and_Dunn_s_River_Falls_Combo_Day_Trip_from_Montego_Bay-Mont.html"><div class="column imgh t1">
+              <img src="image/Blue_Hole_group.jpg" alt="<h3>Blue Hole St. Mary</h3><p>Climb, Dive, Swim, Relax at one of the famous natural water holes</p></im>" style="width:100%" onload="imagegal(this);" onclick="imagegal(this);">
+              
+            <div class="overlay"><p>Blue Hole, Group tour</p></div>
+              </div></a>
+         <a href="https://www.dolphincoveja.com/Parks/dolphin-cove-ocho-rios/jamaica-activities-dolphin-swim-adventure-memories"> <div class="column imgh t1">
+            <img src="image/dolphin-cove-adventure.jpg" alt="<h3>Dolphin Cove Adventure Park</h3><p>Meet and interact with exotic animals and evironment</p>" style="width:100%" onclick="imagegal(this);">
+               <div class="overlay"><p>Dolphin Cove, Adventure Park</p></div>
+          </div></a>
+          <a href="https://www.dolphincoveja.com/Parks/dolphin-cove-ocho-rios/jamaica-activities-dolphin-swim-adventure-memories"><div class="column imgh t1">
+            <img src="image/dolphin-cove-snorkeling.jpg" alt="<h3>Dolphin Cove Snorkeling</h3><p>Experience underwater interaction with marine life</p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Dolphin Cove Snorkeling</p></div>
+              </div></a>
+          <a href="https://rainforestadventure.com/mystic-mountain-jamaica/"><div class="column imgh t1">
+            <img src="image/mystic-mountain-zipline.jpeg" alt="<h3>Mystic Mountain Zipline</h3><p>Experience that adrenaline rush by Zipping across beautiful sceneries </p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Mystic Mountain Zipline</p></div>
+              </div></a>
+            <a href="https://greengrottocavesja.com/rates"><div class="column imgh t1">
+            <img src="image/green-grotto-cave.jpg" alt="<h3>Green Grotto Cave</h3><p>Explore the Caves of the natural work of art </p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Green Grotto Cave</p></div>
+                </div></a>
+            <a href="https://rainforestadventure.com/mystic-mountain-jamaica/"><div class="column imgh t1">
+            <img src="image/sky%20explorer-Mystic-Mountain.jpeg" alt="<h3>Mystic Mountain Sky Explorer</h3><p>Enjoy the beautiful sceneries as your lifted through the skies</p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Mystic Mountain Sky Explorer</p></div>
+                </div></a>
+          <a href="https://www.tripadvisor.com/AttractionProductReview-g147311-d11867455-Blue_Hole_Secret_Falls_and_Dunn_s_River_Falls_Combo_Day_Trip_from_Montego_Bay-Mont.html"><div class="column imgh t1">
+            <img src="image/dunn-s-river-falls.jpg" alt="<h3>Dunn's River Falls</h3><p>Climb The Falls with your climbing Partner</p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Dunn's River Falls</p></div>
+              </div></a>
+          <a href="https://www.dolphincoveja.com/Parks/dolphin-cove-ocho-rios/jamaica-activities-dolphin-swim-adventure-memories"><div class="column imgh t1">
+            <img src="image/swimming_dolphin_cove.jpg" alt="<h3>Dolphin Cove Swimming</h3><p>Interact with the playful, trained dolphins </p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Dolphin Cove Swimming</p></div>
+              </div></a>
+          <a href="https://rainforestadventure.com/mystic-mountain-jamaica/"><div class="column imgh t1">
+            <img src="image/bobsled-Mystic-mountain.jpg" alt="<h3>Mystic Mountain Bobsled</h3><p>Experience the rush as you sled across the mountains</p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Mystic Mountain Bobsled</p></div>
+              </div></a>
+            <a href="https://rainforestadventure.com/mystic-mountain-jamaica/"><div class="column imgh t1">
+            <img src="image/mystic-mountain-annancy-web.jpg" alt="<h3>Mystic Mountain Anancy Web</h3><p>Test your skills on the dynamic Anancy's Web</p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Mystic Mountain Anancy Web</p></div>
+                </div></a>
+            <a href="https://rainforestadventure.com/mystic-mountain-jamaica/"><div class="column imgh t1">
+            <img src="image/Raggamuffin-Mystic-Mountain.jpg" alt="<h3>Mystic Mountain, Raggamuffin Ride</h3><p>Sit and Enjoy the thrilling lifts and twists and turns of the exiting Ragga ride</p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Mystic Mountain, Raggamuffin Ride</p></div>
+                </div></a>
+             <a href="https://www.tripadvisor.com/AttractionProductReview-g147311-d11867455-Blue_Hole_Secret_Falls_and_Dunn_s_River_Falls_Combo_Day_Trip_from_Montego_Bay-Mont.html"><div class="column imgh t1">
+            <img src="image/secret-falls.jpg" alt="<h3>Secret Falls Jamaica</h3><p>Experience the hidden treasure of the Secret Falls</p>" style="width:100%" onclick="imagegal(this);">
+                <div class="overlay"><p>Secret Falls Jamaica</p></div>
+                 </div></a>
+        </div>
+        <div>
+    <p>&copy; Copyright, Daryl Branford, 2021</p>
+</div>
+
+</body>
+<script type="text/javascript">
+function imagegal(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</html>

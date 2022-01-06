@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="style.css">
+	<title>Combo Trips Website</title>
+</head>
+<body class= "background-img" style="background: rgb(142,151,137);
+background: linear-gradient(0deg, rgba(142,151,137,0.7570378493194152) 65%, rgba(81,146,78,0.4489146000196954) 78%),url(image/home-beach.jpg);">
+<!------------------- Header and Nav Menu -------------------------------->
+	<div class="header">
+		<nav>
+			<div class="logo">
+				<img style="width:90px; position: absolute; z-index: 21;"  src="image/tourist-64.png">
+			</div>
+			<div class="nav-menu" id="navMenu">
+				<i class="fa fa-window-close" onclick="hidemenu()"></i>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery </a></li>
+						<li><a href="details.html">Resort Details</a></li>
+						<li><a href="registration.html">Trip Registration</a></li>
+					</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="image-slider" style="height: 155px; margin-bottom: 1px;">
+		<div class="page-name">
+			<h1>Register for Combo Trips</h1>
+		</div>
+
+	</div>
+	<div class="" style="background-image: linear-gradient(rgba(251, 246, 198, 1),rgba(51, 108, 60, 0.37)),url(image/blue-beach.jpg);">
+		<section class="text-area1 half-page">
+			<h1>Registration Form </h1>
+			<p style="color: black; text-align: center;"> Please complete all fields </p>
+		</section>
+        <br>
+		<div class="full-page">
+			<div class="half-page" >
+			<form action="#">
+		    <label for="fname">First Name</label>
+		    <input type="text" id="fname" name="firstname" placeholder="First name..">
+
+		    <label for="lname">Last Name</label>
+		    <input type="text" id="lname" name="lastname" placeholder="last name..">
+                
+            <label for="Age">Age</label>
+		    <input type="range" id="Age" name="lastname" max= "120" min="14">
+                <p id="Age_value"> </p>
+                <br>
+                <label for="Gender">Gender:</label>
+                <br><br>
+                    <input type="radio" name="type" required>
+                    <span>Female</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>Male</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>Trans-Man</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>Trans-Woman</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>Non-Binary</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>Demi-Boy</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>Demi-Girl</span>
+                <br><br><br>
+                <label for="lname">Email-Address</label>
+		    <input type="text" id="Email" name="Email" placeholder="Email-Address..">
+                
+                <br><br>
+                <label for="Combo-trip">Choose a Combo Trip:</label>
+                <select name="Combo-trip" id="Combo-trip">
+                <option value="combo-1">Blue Hole, Secret Falls and Dunn’s River Falls</option>
+                  <option value="combo-2">Dolphin Cove Package</option>
+                  <option value="combo-3">Green Grotto Caves Tour</option>
+                <option value="combo-3">Mystic Mountain Package</option>
+                </select>
+                <br><br>
+                <label for="Departure">Trip Departure Time:</label>
+                <br><br>
+                    <input type="radio" name="type" required>
+                    <span>7:00 a.m</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>9:00 a.m</span>
+                <br>
+                    <input type="radio" name="type" required>
+                    <span>12:00 p.m</span>
+                
+                
+                <br><br><br>
+		    <label for="subject"> Additional Information</label>
+		    <textarea id="subject" name="subject" placeholder="Enter Your Text Here" style="height:200px"></textarea>
+
+                
+                
+                <input type="submit" id="submitBtn" value="Submit" class="btn" / style="margin-bottom: 50px;">
+
+                
+               
+                
+	  	 </form>
+            <div>
+            </div>
+	</div>
+		</div>
+        <div>
+    <p>&copy; Copyright, Daryl Branford, 2021</p>
+</div>
+        
+        <script>
+            document.getElementById("submitBtn").addEventListener("click", myFunction);
+                function myFunction() {
+                window.location.href="mailto:webmaster@example.com";
+                }
+            
+                function change_label()
+                {
+                        age_slider_label.innerHTML = age_slider.value;
+                }
+
+                const age_slider=document.getElementById("Age");
+                const age_slider_label=document.getElementById("Age_value");
+                age_slider_label.textContent = age_slider.value;
+                age_slider.oninput = change_label;
+        </script>
+</div>
+</body>
+    
+</html>
